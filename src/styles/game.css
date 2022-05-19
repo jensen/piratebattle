@@ -1,0 +1,124 @@
+.character-select__container {
+  padding: 1rem;
+}
+
+.character-select__header {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.character-select__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  place-items: center;
+}
+
+.character-select__pirate {
+  height: 10rem;
+  width: 10rem;
+  border: 4px white solid;
+  border-radius: 1rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.character__container {
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.character__pirate {
+  height: 10rem;
+  width: 10rem;
+}
+
+.character__enemy {
+  height: 10rem;
+  width: 10rem;
+  transform: scaleX(-100%);
+}
+
+.game-board {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.game-board__grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 0;
+  width: fit-content;
+  background-color: #475f94;
+  border-bottom: 1px dashed #4984b8;
+  border-right: 1px dashed #4984b8;
+}
+
+.game-board__cell {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-top: 1px dashed #4984b8;
+  border-left: 1px dashed #4984b8;
+}
+
+.game-board__cell--empty {
+  background-color: #475f94;
+}
+
+.game-board__cell--hit {
+  background-color: #ff6163;
+}
+
+.game-board__cell--sunk {
+  background-color: #913133;
+}
+
+.game-board__cell--miss {
+  background-color: #cffdbc;
+}
+
+.game-end__container {
+  padding: 1rem;
+}
+
+.game-end__message {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.game-end__restart {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 980px) {
+  .character-select__list {
+    grid-template-columns: 1fr;
+  }
+
+  .game-board {
+    flex-direction: column;
+  }
+
+  .character__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .character__pirate {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .character__enemy {
+    height: 8rem;
+    width: 8rem;
+    align-self: flex-end;
+    -webkit-align-self: flex-end;
+  }
+}

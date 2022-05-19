@@ -1,0 +1,47 @@
+html,
+body {
+  height: 100%;
+}
+
+@media screen and (max-width: 980px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  color: white;
+  font-family: Lemon, sans-serif;
+}
+
+.layout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.content {
+  width: 100%;
+  flex-grow: 1;
+  display: grid;
+  place-items: center center;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #1f3b4d;
+}
+
+.overlay {
+  border-radius: 1rem;
+  border: 4px white solid;
+  background-color: rgba(0, 0, 0, 0.9);
+}
